@@ -13,7 +13,7 @@ export default defineConfig({
   base: '/Ecommerce_Web/',
   server: {
     host: true, // 允許外部訪問
-    port: 5173,
+    port: 443,
     strictPort: true,
     allowedHosts: ['frontend', 'localhost', 'host.docker.internal'],
   },
