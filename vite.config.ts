@@ -10,7 +10,7 @@ export default defineConfig({
     vue(),
     vueDevTools(),
   ],
-  base: '/Ecommerce_Web/'
+  base: '/Ecommerce_Web/',
   server: {
     host: true, // 允許外部訪問
     port: 5173,
