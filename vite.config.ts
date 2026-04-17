@@ -5,14 +5,15 @@ import vue from '@vitejs/plugin-vue'
 import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
-export default defineConfig({
+
+export default defineConfig(({ mode }) => ({
   plugins: [
     vue(),
     vueDevTools(),
   ],
-  base: '/Ecommerce_Web/',
+  base: process.env.VITE_BASE || '/',
   server: {
-    host: true, // 允許外部訪問
+    host: true,
     port: 5173,
     strictPort: true,
     allowedHosts: ['frontend', 'localhost', 'host.docker.internal'],
@@ -22,5 +23,4 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
-})
-
+}))
