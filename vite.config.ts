@@ -11,7 +11,7 @@ export default defineConfig(({
     vue(),
     vueDevTools(),
   ],
-  base: process.env.VITE_BASE || '/',
+  base: '/Ecommerce_Web/',
   server: {
     host: true,
     port: 5173,
@@ -20,7 +20,7 @@ export default defineConfig(({
   },
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', process.env.VITE_BASE))
+      '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
 }))
