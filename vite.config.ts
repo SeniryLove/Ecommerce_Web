@@ -10,10 +10,10 @@ export default defineConfig({
     vue(),
     vueDevTools(),
   ],
-  base: '/Ecommerce_Web/',
+  base: '/',
   server: {
     host: true, // 允許外部訪問
-    port: 443,
+    port: 5173,
     strictPort: true,
     allowedHosts: ['frontend', 'localhost', 'host.docker.internal'],
   },
@@ -23,3 +23,5 @@ export default defineConfig({
     },
   },
 })
+
+console.log('import.meta.url =', import.meta.url)
