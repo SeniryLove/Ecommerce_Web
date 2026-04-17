@@ -11,7 +11,7 @@ export default defineConfig(({
     vue(),
     vueDevTools(),
   ],
-  base: '/Ecommerce_Web/',
+  base: '/Ecommerce_Web/', 
   server: {
     host: true,
     port: 5173,
