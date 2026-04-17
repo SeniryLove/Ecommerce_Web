@@ -23,13 +23,6 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-
-      - name: test env
-        run: echo $VITE_BACKEND_HOST && echo $VITE_BASE
-        env:
-          VITE_BACKEND_HOST: ${{ secrets.VITE_BACKEND_HOST }}
-          VITE_BASE: ${{ secrets.VITE_BASE }}
-
       - name: Build project
         run: npm run build
         env:
