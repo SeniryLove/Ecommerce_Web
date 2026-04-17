@@ -24,4 +24,3 @@ export default defineConfig({
   },
 })
 
-console.log('import.meta.url =', import.meta.url)
