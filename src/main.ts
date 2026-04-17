@@ -12,4 +12,4 @@ app.use(router)
 
 app.mount('#app')
 
-console.log(import.meta.url)
+console.log(import.meta.env.VITE_BACKEND_HOST)
