@@ -13,5 +13,4 @@ app.use(router)
 app.mount('#app')
 
 console.log(import.meta.env.VITE_BASE)
-console.log(process.env.VITE_BASE)
 console.log(import.meta.env.VITE_BACKEND_HOST)
